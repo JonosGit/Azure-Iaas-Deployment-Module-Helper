@@ -1,0 +1,6 @@
+{
+  "name": "Azure PowerShell Iaas Deployment Helper Module",
+  "tagline": "Azure PowerShell IaaS Deployment Module",
+  "body": "# IaasDeploymentModule\r\nAzure PowerShell Deployment Module\r\n\r\nThis Zip contains a module and module defination file that can be imported by extracting the Zip and placing the extracted folder created by the Zip in one of the three supported PowerShell 3.x and above Module locations.\r\nFor Example:\r\nC:\\Program Files\\WindowsPowerShell\\Modules\\azpsinfrahelper\r\n\r\nLocate the azpsinfrahelper.psm1 file and using the PowerShell ISE modify the following 2 global parameters, one for your Azure Profile location, the other for the Azure Region you wish to deploy in. Once updated save file with you changed.\r\nParam(\r\n$Location = 'WestUs',\r\n$Profile = \"C:\\Temp\\azureprofile.json\"\r\n\t)\r\n\r\nNow Open a new PS1 session as a local administrator on the machine and run 'Import-Module azpsinfrahelper'.\r\n\r\nOnce complete you can get to the core functions by typing:\r\n'Get-azNetinfo', 'Install-Ext', 'New-AzNSG', 'New-AzVnet','New-AzVM','New-AzResGrp','New-AzStorage'\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
